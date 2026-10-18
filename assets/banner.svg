@@ -1,0 +1,145 @@
+<svg fill="none" viewBox="0 0 1200 360" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 44px;
+        fill: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        fill: #94a3b8;
+      }
+      .badge-label {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+      
+      /* Dynamic Ambient Elements Animation */
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 0.45; transform: scale(1.08); }
+      }
+      @keyframes floatCard1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatCard2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes beamMove {
+        0% { stroke-dashoffset: 600; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      .pulse-sphere-1 {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: 200px 100px;
+      }
+      .pulse-sphere-2 {
+        animation: pulseGlow 8s ease-in-out infinite reverse;
+        transform-origin: 1000px 260px;
+      }
+      .card-float-1 {
+        animation: floatCard1 4s ease-in-out infinite;
+      }
+      .card-float-2 {
+        animation: floatCard2 5s ease-in-out infinite;
+      }
+      .data-stream {
+        stroke-dasharray: 20, 10;
+        animation: beamMove 12s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1198" height="358" x="1" y="1" rx="15" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle class="pulse-sphere-1" cx="200" cy="90" r="140" fill="#38bdf8" filter="url(#glow)" opacity="0.25"/>
+  <circle class="pulse-sphere-2" cx="1020" cy="270" r="160" fill="#818cf8" filter="url(#glow)" opacity="0.25"/>
+
+  <!-- Flow & Network Lines behind content -->
+  <g opacity="0.3">
+    <path class="data-stream" d="M 50 80 Q 300 20 600 80 T 1150 80" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path class="data-stream" d="M 50 280 Q 400 340 700 280 T 1150 280" fill="none" stroke="#c084fc" stroke-width="2"/>
+  </g>
+
+  <!-- Foreground Title and Subtitle -->
+  <g transform="translate(600, 120)">
+    <!-- Main Title -->
+    <text class="title-text" text-anchor="middle" y="0">Awesome Cross-Platform Local LLMs</text>
+    
+    <!-- Accent Line -->
+    <rect x="-180" y="20" width="360" height="4" rx="2" fill="url(#accent-grad)"/>
+
+    <!-- Subtitle -->
+    <text class="subtitle-text" text-anchor="middle" y="58">⚡ Production-Ready On-Device Inference • Offline AI • Cross-Platform SDKs 🚀</text>
+  </g>
+
+  <!-- Dynamic Floating Cards / Badges (Below Title so title is never obscured) -->
+  <g transform="translate(140, 230)">
+    <!-- Card 1: Mobile & Edge -->
+    <g class="card-float-1">
+      <rect x="0" y="0" width="200" height="48" rx="24" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="8" fill="#38bdf8"/>
+      <text class="badge-label" x="42" y="30">📱 iOS &amp; Android Ready</text>
+    </g>
+
+    <!-- Card 2: Desktop & Server -->
+    <g class="card-float-2" transform="translate(240, 0)">
+      <rect x="0" y="0" width="200" height="48" rx="24" fill="url(#card-grad)" stroke="#818cf8" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="8" fill="#818cf8"/>
+      <text class="badge-label" x="42" y="30">💻 Mac, Win, Linux</text>
+    </g>
+
+    <!-- Card 3: 100% Offline & Private -->
+    <g class="card-float-1" transform="translate(480, 0)">
+      <rect x="0" y="0" width="210" height="48" rx="24" fill="url(#card-grad)" stroke="#a855f7" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="8" fill="#a855f7"/>
+      <text class="badge-label" x="42" y="30">🔒 100% Offline &amp; Private</text>
+    </g>
+
+    <!-- Card 4: Hardware Acceleration -->
+    <g class="card-float-2" transform="translate(730, 0)">
+      <rect x="0" y="0" width="200" height="48" rx="24" fill="url(#card-grad)" stroke="#34d399" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="8" fill="#34d399"/>
+      <text class="badge-label" x="42" y="30">⚡ Metal • CUDA • Vulkan</text>
+    </g>
+  </g>
+</svg>

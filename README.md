@@ -1,189 +1,182 @@
-# Awesome-Cross-Platform-Local-LLMS
+# Awesome Cross-Platform Local LLMs 🚀
 
-## Top Cross-Platform Local LLMs Ecosystem
+<div align="center">
 
+![Awesome Cross-Platform Local LLMs Banner](./assets/banner.svg)
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cross-Platform-Local-LLMS/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cross-Platform-Local-LLMS?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cross-Platform-Local-LLMS/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cross-Platform-Local-LLMS?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cross-Platform-Local-LLMS/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cross-Platform-Local-LLMS?style=flat-square&color=red" alt="Open Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cross-Platform-Local-LLMS/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.png?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+**A curated index of top SaaS products and open-source GitHub projects for cross-platform local LLMs, on-device AI inference, offline intelligence, and multi-language SDKs.**
 
-*Focused on On-Device Inference, Cross-Language SDKs & Offline AI Applications*  
+*Focusing on zero-latency, private, air-gapped on-device inference for iOS, Android, macOS, Windows, Linux, Web, and Edge IoT devices.*
 
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cross-Platform Local LLMs**. These tools enable developers to embed large language models directly into applications running on mobile, desktop, and edge devices—no cloud APIs, no API keys, and no data leaving the device.
-
-
-
-**Examples** include NobodyWho, Ollama, LM Studio, Jan, LocalAI, GPT4All, LiteRT-LM, Off Grid, Quaynor, and llamadart (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for on-device inference, cross-platform SDKs, and privacy-first local AI—ideal for mobile developers, privacy engineers, and organizations seeking transparent, vendor-independent local LLM deployment.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **Ollama Cloud**  
-
-  Managed cloud models billed through usage credits, complementing the local Ollama runtime . **Free tier** allows 1 concurrent request; **Pro** ($20/mo) allows 3; **Max and Team** allow 10 . **Best for**: teams wanting to prototype locally then scale to cloud without changing code.
-
-
-
-- **Google AI Edge Gallery**  
-
-  **Google's open-source showcase app** for on-device AI, surpassing **500,000 downloads** in two months . Features **Agent Skills** (extend LLM capabilities with JavaScript modules), **Thinking Mode** (view model reasoning), **Prompt Lab** for benchmarking, and **MCP support** with per-call approval . **Available on App Store and Google Play** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[NobodyWho](https://github.com/nobodywho-ooo/nobodywho)**  
-
-  **Framework to run LLMs locally in Flutter, React Native, Swift, and Godot** (EUPL-1.2) . **The most cross-platform on-device inference engine available**—**official bindings for Kotlin, Swift, Python, Flutter, React Native, Expo, and Godot**, covering Android, iOS, Windows, macOS, Linux, and visionOS/watchOS . **Built on llama.cpp** with **simple, type-safe APIs**—no Docker, no GPU servers, no API keys . **Key capabilities**: **type-safe tool calling with automatic grammar generation** (no manual schema writing), **multimodal input** (image and audio), **Speech-to-Text** (Whisper models), **Text-to-Speech** (Kokoro, Pocket TTS, Supertonic), **conversation-aware context shifting**, **GPU acceleration via Metal, CUDA, and Vulkan**, and **Hugging Face model loading** for any GGUF model . **Started May 2023 as "Nimbus2000" for Godot** and expanded to six platforms by 2026 . **€2M fundraising round (December 2025)** to challenge Big Tech's cloud AI . **1,078 GitHub stars** and actively maintained with **React Native v3.0.0 and VAD support** added August 2026 . **The reference implementation for cross-platform local LLM integration** .
-
-
-
-- **[Ollama](https://github.com/ollama/ollama)**  
-
-  **The easiest way to run open models locally** (MIT) . **The most widely adopted local LLM runtime**—**one-command install on macOS, Windows, and Linux** with a large library of open models pulled by name . **Local REST API with official Python and JavaScript libraries** for programmatic integration . **First-class MCP server presence** lets Claude or Claude Code call into a running Ollama daemon as an MCP tool . **The reference implementation for local model running and serving** .
-
-
-
-- **[LM Studio](https://lmstudio.ai/)**  
-
-  **Desktop app for running open models locally** (proprietary, free for personal and commercial use) . **The best desktop experience for discovering and running local models**—**built-in model browser makes discovering and downloading models from Hugging Face effortless**, with **quantization preview** to see quality trade-offs before downloading . **Local server with OpenAI- and Anthropic-compatible endpoints**, **TypeScript and Python SDKs**, and **lms CLI** . **MCP support** for connecting to Model Context Protocol servers . **MLX engine for Apple Silicon** runs Llama, Qwen, and Gemma **30-50% faster** than llama.cpp Metal builds . **The best choice for non-terminal users who want GUI model management** .
-
-
-
-- **[Jan](https://github.com/janhq/jan)**  
-
-  **Open-source ChatGPT alternative that runs locally** (AGPL-3.0) . **The open-source choice when you want LM Studio's ergonomics with no proprietary client anywhere in the stack** . **MCP support via extension** and **OpenAI-shaped API** make it a clean drop-in for tooling expecting the OpenAI schema . **The best free alternative to LM Studio for users who prioritize open-source licensing** .
-
-
-
-- **[LocalAI](https://github.com/mudler/LocalAI)**  
-
-  **Drop-in OpenAI, Anthropic, and ElevenLabs replacement** (MIT) . **Treats OpenAI compatibility as the product rather than a feature**—**point any OpenAI SDK, Anthropic client, or ElevenLabs integration at your LocalAI instance and it responds on the same routes, with the same JSON shape** . **2026 releases pushed past single-machine runtime**: **LocalAI 4.1 added distributed cluster mode with VRAM-aware routing and autoscaling**, **4.0 rewrote the UI in React with Canvas mode**, **4.3 enabled llama.cpp prompt cache by default** so repeated system prompts collapse from minutes to seconds . **Native MCP client in agent flows**—LocalAI's agent runtime can call MCP servers directly when a model emits a tool call . **Ships an Ollama-compatible endpoint alongside OpenAI** . **Best for**: homelabs and small teams serving models to multiple callers who want one endpoint speaking OpenAI, Anthropic, and Ollama at once .
-
-
-
-- **[GPT4All](https://github.com/nomic-ai/gpt4all)**  
-
-  **Local LLM platform with document RAG and GPU acceleration** (MIT) . **77K+ GitHub stars**—**runs LLMs on Windows, macOS, and Linux with full customization** . **The killer feature is LocalDocs**—built-in document retrieval that lets you chat with your local files using RAG . **Vulkan acceleration brings AMD GPU users into the fold** on Windows and Linux, alongside Metal and CUDA . **Python SDK** for integration and automation . **Enterprise features**: usage analytics and centralized model distribution . **Code sandboxing** for safe local agent execution (2026) . **The best choice for enterprises wanting document RAG on local files with air-gapped deployment** .
-
-
-
-- **[LiteRT-LM (Google AI Edge)](https://github.com/google-ai-edge/LiteRT-LM)**  
-
-  **Production-ready orchestration layer to run LLMs with LiteRT** (Apache-2.0) . **Google's official on-device inference framework**—**engineered for high-performance, cross-platform execution** on **Android, iOS, Web, Desktop, and IoT (Raspberry Pi)** . **Hardware acceleration** via **GPU and NPU accelerators** across diverse hardware . **Multi-modality** with **vision and audio support**, **multimodal embeddings** for semantic search and RAG, and **tool use with constrained decoding** for agentic workflows . **Broad model support**: **Gemma, EmbeddingGemma 2, Llama, Phi-4, Qwen and more** . **Benchmarks**: **Gemma-4-E2B (2.58 GB)** achieves **85 tk/s decode on Android GPU**, **142 tk/s on macOS M4 Max GPU**, and **87.8 tk/s on Raspberry Pi 5 CPU** . **The reference implementation for production on-device AI with hardware acceleration** .
-
-
-
-- **[Off Grid](https://github.com/off-grid-ai/off-grid)**  
-
-  **Free offline AI app for iOS and Android** (MIT) . **The most complete mobile offline AI experience**—**combines text generation, image generation, image recognition, and tool execution in a single app** . **All processing on-device**—**models stored on phone, no cloud connection, no data leaves the device** . **Tested on Pixel 10 Pro** with **gemma-3-1b-it-GGUF** producing responses within seconds . **Developer describes it as a "Swiss Army knife for offline AI"** with **privacy first, zero internet connection** . **The best choice for mobile users wanting a general-purpose offline AI platform** .
-
-
-
-- **[Quaynor](https://pub.dev/packages/quaynor)**  
-
-  **Flutter library for running LLMs locally and offline** (MIT) . **The most accessible Flutter-native on-device AI package**—**free for commercial use, no API key required** . **Supports text, vision, embeddings, RAG, and tool calling** . **GGUF model format** with **Metal/Vulkan GPU acceleration** . **On-demand Hugging Face downloads** via `huggingface:owner/repo/filename.gguf` path syntax . **Minimum specs**: **iOS: iPhone 11+ with 4GB RAM**; **Android: Snapdragon 855 / Adreno 640 / 6GB RAM or better** . **The best Flutter-specific package for local LLM inference** .
-
-
-
-- **[llamadart](https://pub.dev/packages/llamadart)**  
-
-  **Dart/Flutter plugin for llama.cpp** (MIT) . **The zero-configuration Flutter option**—**uses Dart Native Assets (build hooks) system to automatically detect platform, download pre-compiled binary, and bundle it seamlessly** . **Full platform support**: **Android, iOS, macOS, Linux, Windows, and Web (WASM)** . **GPU acceleration** via **Metal (Apple) and Vulkan (Android/Linux/Windows)** . **LoRA support** for applying fine-tuned adapters dynamically at runtime . **Dart-first API with decoupled architecture** (LlamaEngine, LlamaBackend, LlamaBackendFactory) . **80%+ test coverage** . **The best choice for Flutter developers who want zero manual build configuration** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Open WebUI](https://github.com/open-webui/open-webui)** — Extensible, feature-rich, self-hosted AI platform (BSD-3-Clause with branding clause) . **The application layer for local LLMs**—**connects to Ollama, LM Studio, or any OpenAI-compatible backend** to add **web access, knowledge bases (13 vector DBs), multi-user support (SSO, RBAC, SCIM), and full agentic platform capabilities** . **The best companion to any local runtime** .
-
-- **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)** — All-in-one AI application with RAG and agents (MIT) . **The most complete application layer**—adds **document ingestion, agents, and multi-user support** to local runtimes . **Best for**: teams wanting an all-in-one desktop app with document chat.
-
-- **[Text Generation WebUI](https://github.com/oobabooga/text-generation-webui)** — Gradio web UI for local LLMs (AGPL-3.0) . **MCP support with per-call approval** . **Note**: AGPL copyleft—check compatibility before commercial embedding .
-
-- Community **n8n** workflows for local LLM deployment orchestration and model management automation.
-
-
-
-**Frameworks for building custom systems**: Combine **NobodyWho** for cross-platform mobile/desktop SDK integration with **Ollama** or **LM Studio** for local model serving, **Open WebUI** for team web access, **GPT4All** for document RAG, and **LiteRT-LM** for production edge deployment—creating a comprehensive local LLM stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Local LLM deployment must respect model licenses (GGUF models vary), hardware constraints, and data protection regulations where applicable.
-
-- **Cross-platform local LLMs are mature and production-ready.** NobodyWho provides **official bindings for six platforms** with **type-safe tool calling, STT/TTS, and GPU acceleration** . Ollama is the **easiest way to run open models locally** . **These are genuine alternatives to cloud APIs for privacy-sensitive and offline use cases.**
-
-- **The platform-specific SDK landscape is specialized.** **NobodyWho** for Flutter, React Native, Swift, Kotlin, Python, and Godot . **Quaynor** for Flutter with simpler API . **llamadart** for Flutter with zero-config build hooks . **LiteRT-LM** for Google AI Edge with NPU acceleration . **Choose based on your target platform and language.**
-
-- **Runtime vs. application layer: pick both.** **Ollama** and **LM Studio** are runtimes that serve models. **Open WebUI** and **AnythingLLM** are application layers that add chat UIs, RAG, and multi-user support . **The dominant 2026 pattern is one runtime plus one application layer** .
-
-- **Hardware constraints determine what you can run.** **Models under 1 GB run smoothly on mobile** . **iOS reserves 1-2 GB for the system**; Android overhead varies by manufacturer (2 GB stock, 2-4 GB Samsung/Xiaomi/Oppo) . **As a general rule, the device needs at least twice the available RAM as the model file size** .
-
-- **The hybrid approach dominates production.** Run **local models for high-volume or sensitive work** and **reach for a frontier cloud model only for the hardest slice** . **Ollama Cloud** provides the escape hatch when you need more power .
-
-- Self-hosted open-source solutions require proper model management, hardware provisioning, and ongoing maintenance. **Model downloads consume significant storage**—plan for Wi-Fi downloads and storage management on mobile devices .
-
-
+</div>
 
 ---
 
+## 📑 Table of Contents
+- [✨ Overview](#-overview)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [🏆 Top Category Leaders & Core Runtimes](#-top-category-leaders--core-runtimes)
+  - [📱 Mobile, Flutter & Edge Embedded SDKs](#-mobile-flutter--edge-embedded-sdks)
+  - [🖥️ Application & Orchestration Layer](#️-application--orchestration-layer)
+- [💡 Hardware Constraints & Architecture Guide](#-hardware-constraints--architecture-guide)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer](#️-disclaimer)
 
+---
 
-**Made for mobile developers, privacy engineers, and organizations building transparent local LLM solutions.**  
+## ✨ Overview
 
-Let's make Cross-Platform Local LLMs more open, data-driven, and on-device.
-# Awesome-Cross-Platform-Local-LLMS
+Running Large Language Models (LLMs) locally on-device represents the next frontier in artificial intelligence deployment. By running models directly on consumer smartphones, laptops, workstations, and edge appliances, developers eliminate costly cloud API bills, eradicate latency bottlenecks, and preserve strict user privacy with zero data leakage.
 
+This directory tracks the most influential **SaaS platforms** and **open-source runtimes, SDKs, and applications** across the local AI ecosystem.
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The **Edge AI and On-Device AI** market is projected to expand from approximately **$25–$30 billion in 2025–2026 to over $70–$90 billion by 2030–2033**, driven by an aggressive CAGR exceeding **20–28%** as NPU silicon permeates personal devices and enterprise hardware.
+
+The sector exhibits a distinct structural duality: it is **highly concentrated at the semiconductor/silicon layer** (dominated by an oligopoly of Apple, Qualcomm, NVIDIA, AMD, and Intel), but remains **moderately to highly fragmented across the software toolchain and application layer**, where competing cross-platform runtimes (llama.cpp, ONNX, LiteRT, WebGPU) and specialized niche frameworks continuously vie for developer mindshare without a single winner-take-all monopoly.
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+The table below covers hosted and managed platforms that complement local and on-device LLM workflows, sorted descending by company scale (valuation / market capitalization):
+
+| Product | Company | Company Scale (Valuation / Market Cap) | Pricing (Starting Tier) | Free Tier Limits / Free Trial | Key Capabilities & Best For |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Google AI Edge Gallery](https://github.com/google-ai-edge/LiteRT-LM)** | Google (Alphabet Inc.) | **~$4.10T–$4.30T Market Cap** | **$0 / month** (100% Free & Open-Source) | **Unlimited free forever**; runs 100% locally on-device with zero cloud token charges | Mobile showcase app with Agent Skills, JavaScript modules, Thinking Mode reasoning visualization, prompt benchmarking, and MCP support on iOS & Android. |
+| **[Ollama Cloud](https://ollama.com/)** | Ollama Inc. | **$88M Raised** (Series B funded, VC backed) | **$20 / month** (Pro Tier) | **Free tier forever**: 1 concurrent cloud model request with shared baseline usage capacity | Cloud-hosted open weights runner allowing seamless scaling from local CLI/daemon to cloud instances for 100B+ parameter models without code modifications. |
+| **[LM Studio (Bionic)](https://lmstudio.ai/)** | Element Labs, Inc. | **Seed-funded private startup** | **$20 / month** (Bionic+ Tier) | **Free tier forever**: Core desktop app is 100% free for personal and commercial/workplace use; free cloud tier includes local runner & basic Bionic Agent features | Local model discovery desktop UI with Hugging Face integration, OpenAI-compatible local endpoints, and MLX Apple Silicon optimization. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Curated open-source repositories powering the offline and on-device AI revolution, **sorted descending by GitHub star count**.
+
+### 🏆 Top Category Leaders & Core Runtimes
+
+* **[Ollama](https://github.com/ollama/ollama)** [![GitHub stars](https://img.shields.io/github/stars/ollama/ollama?style=social&color=white)](https://github.com/ollama/ollama/stargazers) 🦙  
+  **The de facto standard for running open LLMs locally** (MIT). One-command setup for macOS, Windows, and Linux. Ships local REST APIs with official Python/JavaScript SDKs and first-class MCP (Model Context Protocol) server support.
+
+* **[Open WebUI](https://github.com/open-webui/open-webui)** [![GitHub stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social&color=white)](https://github.com/open-webui/open-webui/stargazers) 🌐  
+  **Extensible, feature-packed self-hosted AI interface** (BSD-3-Clause). Connects effortlessly to Ollama, LocalAI, vLLM, or any OpenAI-compatible server. Adds multi-user RBAC, RAG document knowledge bases (13+ vector engines), web search browsing, and complete agent execution.
+
+* **[llama.cpp](https://github.com/ggerganov/llama.cpp)** [![GitHub stars](https://img.shields.io/github/stars/ggerganov/llama.cpp?style=social&color=white)](https://github.com/ggerganov/llama.cpp/stargazers) ⚡  
+  **The foundational C/C++ engine behind modern local inference** (MIT). Pioneered the GGUF model format and integer quantization (2-bit to 8-bit). Delivers blistering bare-metal CPU, Metal, CUDA, and Vulkan performance across Apple Silicon, PCs, and edge appliances.
+
+* **[vLLM](https://github.com/vllm-project/vllm)** [![GitHub stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers) 🚀  
+  **High-throughput and memory-efficient LLM serving engine** (Apache-2.0). Utilizes PagedAttention to minimize memory fragmentation, serving local LLMs at enterprise scale with distributed multi-GPU routing and OpenAI-compatible endpoints.
+
+* **[GPT4All](https://github.com/nomic-ai/gpt4all)** [![GitHub stars](https://img.shields.io/github/stars/nomic-ai/gpt4all?style=social&color=white)](https://github.com/nomic-ai/gpt4all/stargazers) 📚  
+  **Local LLM platform with privacy-first document RAG and GPU acceleration** (MIT). Features *LocalDocs* for querying sensitive PDF/code repositories entirely offline. Supports Vulkan across AMD/Intel GPUs, Python SDK, and enterprise air-gapped sandboxes.
+
+* **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)** [![GitHub stars](https://img.shields.io/github/stars/Mintplex-Labs/anything-llm?style=social&color=white)](https://github.com/Mintplex-Labs/anything-llm/stargazers) 📦  
+  **All-in-one desktop and enterprise workspace AI application** (MIT). Zero-setup RAG, custom agentic workflows, multi-modal ingestion, and complete multi-tenant user permissions designed for local and self-hosted environments.
+
+* **[LocalAI](https://github.com/mudler/LocalAI)** [![GitHub stars](https://img.shields.io/github/stars/mudler/LocalAI?style=social&color=white)](https://github.com/mudler/LocalAI/stargazers) 🔌  
+  **Drop-in self-hosted OpenAI, Anthropic, and ElevenLabs replacement** (MIT). Runs LLMs, audio transcription, image generation, and embeddings on commodity hardware. Features distributed cluster clustering with VRAM-aware load balancing and native MCP client tool calling.
+
+* **[Text Generation WebUI](https://github.com/oobabooga/text-generation-webui)** [![GitHub stars](https://img.shields.io/github/stars/oobabooga/text-generation-webui?style=social&color=white)](https://github.com/oobabooga/text-generation-webui/stargazers) 🎛️  
+  **The swiss-army knife Gradio interface for local text generation** (AGPL-3.0). Supports multiple loaders (Transformers, llama.cpp, ExLlamaV2, AutoGPTQ), LoRA fine-tuning injection, prompt presets, and extensions.
+
+* **[Jan](https://github.com/janhq/jan)** [![GitHub stars](https://img.shields.io/github/stars/janhq/jan?style=social&color=white)](https://github.com/janhq/jan/stargazers) 🤖  
+  **Open-source ChatGPT alternative that runs 100% offline** (AGPL-3.0). Elegant desktop client with OpenAI-compatible local server, modular extension marketplace, MCP client integration, and multi-engine backend.
+
+* **[MLC-LLM](https://github.com/mlc-ai/mlc-llm)** [![GitHub stars](https://img.shields.io/github/stars/mlc-ai/mlc-llm?style=social&color=white)](https://github.com/mlc-ai/mlc-llm/stargazers) 🧬  
+  **Universal compiler-based deployment engine for on-device LLMs** (Apache-2.0). Compiles models natively to Vulkan, Metal, CUDA, ROCm, WebGPU, and iOS/Android runtimes for native hardware acceleration.
+
+* **[WebLLM](https://github.com/mlc-ai/web-llm)** [![GitHub stars](https://img.shields.io/github/stars/mlc-ai/web-llm?style=social&color=white)](https://github.com/mlc-ai/web-llm/stargazers) 🌍  
+  **High-performance in-browser LLM inference engine** (Apache-2.0). Brings hardware-accelerated LLMs directly into web browsers via WebGPU without server-side compute.
+
+* **[Transformers.js](https://github.com/huggingface/transformers.js)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/transformers.js?style=social&color=white)](https://github.com/huggingface/transformers.js/stargazers) 🤗  
+  **State-of-the-art machine learning in the browser & Node.js** (Apache-2.0). Hugging Face's official JavaScript runtime for running text, vision, and speech models client-side with ONNX Runtime and WebGPU acceleration.
+
+* **[LiteRT-LM (Google AI Edge)](https://github.com/google-ai-edge/LiteRT-LM)** [![GitHub stars](https://img.shields.io/github/stars/google-ai-edge/LiteRT-LM?style=social&color=white)](https://github.com/google-ai-edge/LiteRT-LM/stargazers) 📱  
+  **Google's production on-device LLM orchestration framework** (Apache-2.0). High-performance inference engine for Android, iOS, Web, Desktop, and Raspberry Pi with dedicated NPU/GPU acceleration, tool calling, and multimodal support for Gemma, Llama, and Qwen.
+
+* **[Off Grid AI (OGAM)](https://github.com/off-grid-ai/OGAM)** [![GitHub stars](https://img.shields.io/github/stars/off-grid-ai/OGAM?style=social&color=white)](https://github.com/off-grid-ai/OGAM/stargazers) 🛡️  
+  **All-in-one offline AI application for iOS and Android** (MIT). Combines local LLM chat, on-device Whisper speech-to-text, vision analysis, and local tool execution with zero internet connectivity and zero telemetry.
+
+* **[NobodyWho](https://github.com/nobodywho-ooo/nobodywho)** [![GitHub stars](https://img.shields.io/github/stars/nobodywho-ooo/nobodywho?style=social&color=white)](https://github.com/nobodywho-ooo/nobodywho/stargazers) 🧩  
+  **Universal cross-platform SDK for Flutter, React Native, Swift, Kotlin, and Godot** (EUPL-1.2). llama.cpp-backed engine with type-safe automatic grammar generation, tool calling, STT/TTS audio pipelines, and Metal/Vulkan GPU acceleration across 6 platforms.
+
+---
+
+### 📱 Mobile, Flutter & Edge Embedded SDKs
+
+* **[Quaynor](https://pub.dev/packages/quaynor)** 🎯  
+  **Flutter package for local offline inference** (MIT). Directly downloads GGUF models from Hugging Face (`huggingface:repo/model.gguf`) with Metal/Vulkan acceleration, RAG, and on-device tool calling.
+
+* **[llamadart](https://pub.dev/packages/llamadart)** 🪶  
+  **Zero-configuration Dart/Flutter plugin for llama.cpp** (MIT). Uses Dart Native Assets build hooks to bundle pre-compiled binaries automatically for Android, iOS, macOS, Windows, Linux, and Web (WASM). Supports runtime LoRA adapters and decoupled engine backends.
+
+---
+
+### 🖥️ Application & Orchestration Layer
+
+* **[LM Studio](https://lmstudio.ai/)** 🎨  
+  **Premier desktop GUI for running local models** (Proprietary, free for personal and workplace use). Clean model catalog with Hugging Face integration, quantization previews, Apple Silicon MLX acceleration, and OpenAI/Anthropic API emulation.
+
+* **Community Workflow Automations (n8n & Flowise)** 🔄  
+  Integration templates connecting local Ollama, LocalAI, or llama-cpp endpoints into multi-step agent pipelines, scheduled ETL scripts, and autonomous workflows without third-party cloud API costs.
+
+---
+
+## 💡 Hardware Constraints & Architecture Guide
+
+Deploying local LLMs successfully requires matching model size and quantization to target hardware:
+
+1. **RAM Headroom Rule**: As a rule of thumb, ensure total available system RAM/VRAM is at least **1.5× to 2× the GGUF model file size** to allocate KV cache, system processes, and context windows.
+2. **Mobile Operating Limits**: iOS restricts single-app memory usage (1–2 GB system overhead); Android memory caps vary across manufacturers (2–4 GB headroom recommended). Models under **2 GB (e.g., 1B–2B parameter models at Q4_K_M)** run smoothly on modern flagship smartphones.
+3. **Hybrid Architecture Pattern**: The dominant modern pattern pairs a local on-device model for high-frequency low-latency prompts (summarization, autocomplete, data extraction) with an on-demand cloud model (via Ollama Cloud or OpenAI APIs) reserved solely for complex reasoning tasks.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! Help make this ecosystem resource even better:
+
+1. 🍴 Fork the repository.
+2. 🌿 Create a descriptive branch: `git checkout -b feature/add-new-runtime`.
+3. 📝 Add your entry with factual, concise details, official links, and GitHub star counts.
+4. 📬 Submit a Pull Request with a clear explanation of why the tool benefits cross-platform local AI developers.
+
+---
+
+## ☕ Support & Sponsorship
+
+If you find this curated ecosystem list helpful for your research, projects, or applications:
+
+- ⭐ **Star this repository** to show support and boost visibility for the local AI community!
+- 🍴 **Fork and share** with colleagues and developers building on-device AI.
+- 💖 **Sponsor the project**: Consider buying a coffee or providing financial sponsorship via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007). Your support fuels ongoing maintenance, benchmarking, and updates!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cross-Platform-Local-LLMS&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cross-Platform-Local-LLMS&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer
+
+- This is a community-curated directory intended for research and educational purposes.
+- Users and developers must verify and adhere to respective model weight licenses (e.g., Llama Community License, Gemma Terms of Use) and data privacy regulations.
+- All trademarks and brand names belong to their respective owners.
